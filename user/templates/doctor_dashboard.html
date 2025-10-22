@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Doctor Dashboard{% endblock %}
+{% block content %}
+
+<div class="card shadow-sm p-4">
+    <h3>Welcome, {{ request.user.first_name }} (Doctor)</h3>
+    <p>This is your doctor dashboard.</p>
+
+    <a class="btn btn-danger" href="{% url 'logout' %}">Logout</a>
+</div>
+
+{% endblock %}
